@@ -1,0 +1,81 @@
+*{
+    font-size: 30px ;
+}
+/*pseudoelementy*/
+#kontener p::before{
+    content:'*';
+}
+
+#kontener p::after{
+    content:'*';
+}
+
+#kontener h1::first-letter{
+    color:red ;
+}
+
+#kontener p::first-line{
+    color:red;
+}
+/*pseudoklasy linków*/
+#link a:link {
+    color:pink ;
+}
+
+#link a:visited{
+    color:grey;
+}
+
+#link a:hover{
+    color:yellow;
+}
+
+#link a:active{
+    color:red;
+}
+
+#formularz input:focus{
+    color:red ;
+}
+
+div:target{
+    border:1px solid black ;
+}
+
+div[lang="pl"] p{
+    background-color: grey ;
+}
+
+#child ul li:first-child {
+    font-size: 40px;
+}
+
+#child ul li:last-child {
+    font-size: 60px;
+    color:yellow;
+}
+#only-child span:only-child{
+    color:red;
+}
+
+div:empty {
+    height:300px ;
+    width:300px;
+    background-color: red ;
+}
+
+#atrybuty input[title~="t1"]{
+    border: 1px solid green ;
+}
+
+#atrybuty input[title*="t"]{
+    border: 1px solid red ;
+}
+
+#atrybuty input[title^="jak"]{
+    border: 1px solid blue ;
+}
+
+#atrybuty input[title$="vpi"]{
+    border: 1px solid yellow ;
+}
